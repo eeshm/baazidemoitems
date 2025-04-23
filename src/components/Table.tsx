@@ -3,11 +3,13 @@
 import React, { useState, useMemo } from 'react';
 import { InventoryItem } from '@/features/inventory/inventorySlice';
 
-interface Column<T> {
+
+export type Column<T> = {
   header: string;
   accessor: keyof T;
-}
-
+  sortable?: boolean;
+  filterable?: boolean;
+};
 interface TableProps<T> {
   data: T[];
   columns: Column<T>[];
