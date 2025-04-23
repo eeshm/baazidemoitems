@@ -1,40 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+#  Baaz Bikes
+A fully responsive, reusable Inventory Table built using Next.js, TypeScript, TailwindCSS, and Redux Toolkit. 
 
-## Getting Started
+##  Project Overview
+1. A reusable Table component that supports:
 
-First, run the development server:
+    _Column-wise sorting (asc/desc icons always visible)
+    _Column-wise filtering (search in columns)
+    _Pagination (dynamic per page)
+    _Responsive design (mobile + desktop friendly)
+
+2. Dynamic API integration to fetch live inventory data from:
+    _https://dev.electorq.com/dummy/inventory
+
+3. Efficient state management using Redux Toolkit.
+
+4. Designed to handle large datasets smoothly.
+
+## Setup Instructions
+Clone the repository
+
+bash
+Copy
+Edit
+git clone <your-repo-url>
+cd <your-project-folder>
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Run the development server
+
+bash
+Copy
+Edit
+npm run dev
+Open http://localhost:3000 to view it in your browser.
+
+
+## Features Implemented
+
+1. Reusable Table - A generic table component that accepts any dataset and column definitions.
+2. Pagination - Navigate through multiple pages of inventory data.
+3. Sorting - Clickable column headers with ascending (↑) and descending (↓) sorting functionality.
+4. Filtering - Search functionality per column to filter table results.
+5. Redux Integration - Global state management using Redux Toolkit (createAsyncThunk, createSlice).
+6. TypeScript Strict Typing	- Strong typing across components, APIs, and Redux slices.
+7. API Proxying	- Handled external API errors and network issues via Next.js API routes.
+8. Responsive UI - Mobile-first design with TailwindCSS, works on all screen sizes.
+9. Code Quality - Modular, clean, and scalable folder structure and reusable hooks/components.
+
+
+# Baaz Bikes
+
+A fully responsive, reusable Inventory Table built using Next.js, TypeScript, TailwindCSS, and Redux Toolkit.
+
+## Project Overview
+
+### Features
+
+1. A reusable Table component that supports:
+    * Column-wise sorting (asc/desc icons always visible)
+    * Column-wise filtering (search in columns)
+    * Pagination (dynamic per page)
+    * Responsive design (mobile + desktop friendly)
+
+2. Dynamic API integration to fetch live inventory data from:
+    * https://dev.electorq.com/dummy/inventory
+
+3. Efficient state management using Redux Toolkit.
+
+4. Designed to handle large datasets smoothly.
+
+## Setup Instructions
+
+### Clone the Repository
+
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view it in your browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Features Implemented
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Core Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. Reusable Table - A generic table component that accepts any dataset and column definitions.
+2. Pagination - Navigate through multiple pages of inventory data.
+3. Sorting - Clickable column headers with ascending (↑) and descending (↓) sorting functionality.
+4. Filtering - Search functionality per column to filter table results.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Technical Features
 
-## Learn More
+1. Redux Integration - Global state management using Redux Toolkit (createAsyncThunk, createSlice).
+2. TypeScript Strict Typing - Strong typing across components, APIs, and Redux slices.
+3. API Proxying - Handled external API errors and network issues via Next.js API routes.
+4. Responsive UI - Mobile-first design with TailwindCSS, works on all screen sizes.
+5. Code Quality - Modular, clean, and scalable folder structure and reusable hooks/components.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+* Next.js
+* TypeScript
+* TailwindCSS
+* Redux Toolkit
+* Axios
